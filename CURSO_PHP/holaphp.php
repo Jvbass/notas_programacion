@@ -75,3 +75,20 @@ Se define una variable con el signo $ y el nombre en formato snake_case. */
     $my_url = "google.com"; // si cambiamos el valor de la variable my_url, la constante URL_DOCUMENTACION, en este caso, no cambiara ya que toma el valor de la variable my_url cuando creamos la constante (linea 71)
     echo URL_DOCUMENTACION . " 🎇" .  "\n";
 
+//String numericos 
+/* En PHP los string que contienen numeros, se comportan como numeros al operar con ellos, pero siguen siendo un string */
+
+    $s_num1 = "1";
+    $s_num2 = "4";
+    echo gettype($s_num2) . "\n" ;
+    $s_total = $s_num1 + $s_num2;
+
+    echo $s_total . "\n";;
+    echo gettype($s_total) . "\n";
+
+    if ($s_num1 > $s_num2) {
+        echo "El primer número es mayor";
+      } else {
+        echo "El segundo número es mayor o igual";
+      }
+
